@@ -269,20 +269,43 @@ For more information, please refer to ${licenseLink}`;
 
       const readmeContent = `# ${title} 
 ${licenseBadge}
+
+## Table of contents
+* [Description](#description)
+* [Installation Instructions](#installIns)
+* [Usage Instructions](#usage)
+* [Contribution Guidelines](#contribution)
+* [Testing Instructions](#testIns)
+* [License](#license)
+* [Questions](#questions)
+
+<a name="description"></a>
 ## Description 
 ${description} 
+
+<a name="installIns"></a>
 ## Installation Instructions 
 ${installIns}
+
+<a name="usage"></a>
 ## Usage Instructions 
 ${usage}
+
+<a name="contribution"></a>
 ## Contribution Guidelines
 ${contribution}
+
+<a name="testIns"></a>
 ## Testing Instructions
 ${testIns}
+
+<a name="license"></a>
 ## License
 ${license}
 - ${licenseLink}
     ${licenseText}
+
+<a name="questions"></a>   
 ## Questions
 How can I be reached?
 - My Github: https://github.com/${username}
