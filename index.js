@@ -71,31 +71,23 @@ function init() {
   
       const { title, description, installIns, usage, contribution, testIns, license, username, email } = data;
 
-      var readmeContent = `#${title}
-
-      ##Description
-      ${description}
-
-      ##Installation Instructions
-      ${installIns}
-
-      ##Usage Instructions
-      ${usage}
-
-      ##Contribution Guidelines
-      ${contribution}
-      
-      ##Testing Instructions
-      ${testIns}
-      
-      ##License
-      ${license}
-      
-      ##Questions
-      How can I be reached?
-      My Github: https://github.com/${username}
-      My Email: ${email}`
-    ;
+      var readmeContent = `# ${title} 
+## Description 
+${description} 
+## Installation Instructions 
+${installIns} 
+## Usage Instructions 
+${usage}
+## Contribution Guidelines
+${contribution}
+## Testing Instructions
+${testIns}
+## License
+${license}
+## Questions
+How can I be reached?
+- My Github: https://github.com/${username}
+- My Email: ${email}`;
       
       writeToFile('generatedREADME.md', readmeContent);
 
