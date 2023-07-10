@@ -16,11 +16,9 @@ SO THAT I can quickly create a professional README for a new project
 * A Badge is added to the README dependent on the users choice.
 * Table Of Contents is functional.
 
-## Mockup
-<img src="screenshot.png">
-
 ## Video Tutorial
-link here
+Watch my video tutorial/walkthrough here:
+- https://drive.google.com/file/d/1tU3fxWMdHeK-2x5RKsaHdXOAXzxxtFWv/view
 
 ## Credits
 Node.js
