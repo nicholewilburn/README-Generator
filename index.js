@@ -8,7 +8,7 @@ const questions = ['What is the title of your project?','What is the Description
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 
-    fs.writeFile('index.html', htmlContent, (err) => {
+    fs.writeFile(fileName, data, (err) => {
         err ? console.log(err) : console.log("File written successfully");
     });
 
@@ -71,9 +71,33 @@ function init() {
   
       const { title, description, installIns, usage, contribution, testIns, license, username, email } = data;
 
-      var readmeContent = ``;
+      var readmeContent = `#${title}
+
+      ##Description
+      ${description}
+
+      ##Installation Instructions
+      ${installIns}
+
+      ##Usage Instructions
+      ${usage}
+
+      ##Contribution Guidelines
+      ${contribution}
       
-      writeToFile('generatedREADME.md', data);
+      ##Testing Instructions
+      ${testIns}
+      
+      ##License
+      ${license}
+      
+      ##Questions
+      How can I be reached?
+      My Github: https://github.com/${username}
+      My Email: ${email}`
+    ;
+      
+      writeToFile('generatedREADME.md', readmeContent);
 
     })
     .catch((error) => {
